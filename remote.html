@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TV Remote Control</title>
+</head>
+<body>
+
+	<h1>TV Remote Control</h1>
+
+	<div id="remote-control">
+		<button id="power-button">On/Off</button>
+		<button id="source-button">Source</button>
+		<button id="tv-button">TV</button>
+		<button id="netflix-button">Netflix</button>
+		<button id="disney-button">Disney+</button>
+		<button class="digit-button">0</button>
+		<button class="digit-button">1</button>
+		<button class="digit-button">2</button>
+		<button class="digit-button">3</button>
+		<button class="digit-button">4</button>
+		<button class="digit-button">5</button>
+		<button class="digit-button">6</button>
+		<button class="digit-button">7</button>
+		<button class="digit-button">8</button>
+		<button class="digit-button">9</button>
+		<button id="volume-plus">Vol+</button>
+		<button id="volume-minus">Vol-</button>
+		<button id="sound-options">Sound Options</button>
+		<button id="video-options">Video Options</button>
+	</div>
+
+	<script>
+		// Define variables for the buttons
+		let powerButton = document.getElementById("power-button");
+		let sourceButton = document.getElementById("source-button");
+		let tvButton = document.getElementById("tv-button");
+		let netflixButton = document.getElementById("netflix-button");
+		let disneyButton = document.getElementById("disney-button");
+		let digitButtons = document.querySelectorAll(".digit-button");
+		let volumePlusButton = document.getElementById("volume-plus");
+		let volumeMinusButton = document.getElementById("volume-minus");
+		let soundOptionsButton = document.getElementById("sound-options");
+		let videoOptionsButton = document.getElementById("video-options");
+
+		// Add event listeners for each button
+		powerButton.addEventListener("click", function() {
+		  // Code to turn the TV on or off
+		  console.log("Power button clicked");
+		});
+
+		sourceButton.addEventListener("click", function() {
+		  // Code to open the source menu
+		  console.log("Source button clicked");
+		});
+
+		tvButton.addEventListener("click", function() {
+		  // Code to control the TV
+		  console.log("TV button clicked");
+		});
+
+		netflixButton.addEventListener("click", function() {
+		  // Code to open Netflix
+		  console.log("Netflix button clicked");
+		});
+
+		disneyButton.addEventListener("click", function() {
+		  // Code to open Disney+
+		  console.log("Disney button clicked");
+		});
+
+		digitButtons.forEach(function(button) {
+		  button.addEventListener("click", function() {
+		    let digit = button.textContent;
+		    // Code to enter the selected digit
+		    console.log(`Digit ${digit} button clicked`);
+		  });
+		});
+
+		volumePlusButton.addEventListener("click", function() {
+		  // Code to increase the volume
+		  console.log("Volume + button clicked");
+		});
+
+		volumeMinusButton.addEventListener("click", function() {
+		  // Code to decrease the volume
+		  console.log("Volume - button clicked");
+		});
+
+		soundOptionsButton.addEventListener("click", function() {
+		  // Code to open sound options
+		  console.log("Sound options button clicked");
+		});
+
+		videoOptionsButton.addEventListener("click", function() {
+		  // Code to open video options
+		  console.log("Video options button clicked");
+	
