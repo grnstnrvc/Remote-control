@@ -7,20 +7,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 button {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   padding: 10px 20px;
   margin: 10px;
   border-radius: 10px;
   background-color: #f0f0f0;
   border: none;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.7s ease;
 }
 
 button:hover {
@@ -73,7 +73,7 @@ button:hover {
 }
 
 .digit-button {
-  font-size: 24px;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 500px) {
